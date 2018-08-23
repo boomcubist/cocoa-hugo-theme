@@ -337,6 +337,9 @@ section.main .content {
   color: #111;
   font-size: 16px;
 }
+section.main .content .tags {
+  margin-bottom: 16px;
+}
 section.main .content .title-container {
   display: -webkit-flex;
   display: -moz-flex;
