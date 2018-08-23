@@ -8,7 +8,12 @@
                 </div>
             {{ end }}
             <div class="page-heading">{{ i18n "blogHeading" }}
-            </div>            
+            </div>   
+            <nav class="section-items">
+                <ul>
+                    <li><a href="https://fiftynine.io/tags">Tags</a></li>
+                </ul>
+            </nav>          
             <ul>
                 {{ if eq .Site.Params.bloggroupby "month" }}
                     {{ $.Scratch.Set "datespec" "Jan, 2006" }}
