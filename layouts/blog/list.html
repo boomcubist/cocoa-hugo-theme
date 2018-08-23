@@ -8,13 +8,7 @@
                 </div>
             {{ end }}
             <div class="page-heading">{{ i18n "blogHeading" }}
-            </div>
-            <nav class="section-items">
-                <ul>
-                    <li><a {{ printf "href=%q" ("/tags" | relLangURL) | safeHTMLAttr }}>{{ i18n "Tags" }}</a></li>
-                </ul>
-            </nav>
-            
+            </div>            
             <ul>
                 {{ if eq .Site.Params.bloggroupby "month" }}
                     {{ $.Scratch.Set "datespec" "Jan, 2006" }}
@@ -37,6 +31,11 @@
                 {{ end }}
             </ul>
         </div>
+        <nav class="section-items">
+            <ul>
+                <li><a {{ printf "href=%q" ("/tags" | relLangURL) | safeHTMLAttr }}>{{ i18n "Tags" }}</a></li>
+            </ul>
+        </nav>
     </div>
 </section>
 {{ partial "footer.html" . }}
