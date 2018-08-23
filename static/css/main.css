@@ -378,6 +378,15 @@ section.main .content .page-heading {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
+section.main .content .page-heading a{
+  font-size: 18px;
+  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  letter-spacing: -0.005rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
 section.main .content .front-matter .page-heading {
   margin-bottom: 0;
 }
