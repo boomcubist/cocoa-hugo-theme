@@ -30,12 +30,12 @@
                     {{ end }}
                 {{ end }}
             </ul>
+            <nav class="section-items">
+                <ul>
+                    <li><a {{ printf "href=%q" ("/tags" | relLangURL) | safeHTMLAttr }}>{{ i18n "Tags" }}</a></li>
+                </ul>
+            </nav>        
         </div>
-        <nav class="section-items">
-            <ul>
-                <li><a {{ printf "href=%q" ("/tags" | relLangURL) | safeHTMLAttr }}>{{ i18n "Tags" }}</a></li>
-            </ul>
-        </nav>
     </div>
 </section>
 {{ partial "footer.html" . }}
