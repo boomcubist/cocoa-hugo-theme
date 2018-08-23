@@ -8,7 +8,7 @@
                 </div>
             {{ end }}
             <div class="page-heading">{{ i18n "blogHeading" }}</div>
-            <p class="back-to-posts"><a {{ printf "href=%q" ("/tags" | relLangURL) | safeHTMLAttr }}>{{ i18n "Tags" }}</a></p>
+            <a {{ printf "href=%q" ("/tags" | relLangURL) | safeHTMLAttr }}>{{ i18n "Tags" }}</a>
             <ul>
                 {{ if eq .Site.Params.bloggroupby "month" }}
                     {{ $.Scratch.Set "datespec" "Jan, 2006" }}
